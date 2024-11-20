@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #1C1C1C 40%, #3A3A3A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    position: relative; 
+}
+
+/* Chữ "Binh Thanh" chìm vào background */
+#backgroundText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Babylonica', sans-serif;
+    font-size: 200px;
+    letter-spacing: 20px;
+    white-space: nowrap;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    z-index: 0; 
+}
+
+#bookingText {
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: none;
+    margin-left: 40px;
+}
+
+#note {
+    display: flex;
+    width: 211px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: center;
+    color: #5B5B5B;
+    font-family: Jomolhari;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.content {
+    width: 100%;
+    
+}
+
+.container {
+    width: 1500px;
+    align-items: center;
+}
+
+.doubleChair {
+    width: 120px;
+    height: 120px;
+}
+
+.row-DoubleChair, .row-FourChair, .row-largeTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    margin-bottom: 60px;
+}
+
+.btnDoubleChair {
+    background: none; 
+    border: none;
+    cursor: pointer; 
+    padding: 0; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnDoubleChair:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.fourChair {
+    width: 144px;
+    height: 144px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourChair svg {
+    transform: rotate(90deg); 
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.reservation {
+    z-index: 20;
+    align-items: center;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#directlyContact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+   
+    color: #FFF;
+    font-family: Junge;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reservation-form {
+    align-items: center;
+    position: relative;
+    background: #FFF;
+    width: 300px;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+#messageBox {
+    width: 230px;
+}
+
+#submitBtn {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.reservation-form { margin-block-start: -270px; }
+
+.form-text { margin-block-end: 40px; }
+
+.form-text .link {
+  display: inline;
+  color: var(--gold-crayola);
+}
+
+.form-right .headline-1 { margin-block-end: 40px; }
+
+.form-right .contact-label { margin-block-end: 5px; }
+
+.form-right .separator { margin: 20px auto; }
+
+.form-right .body-4 {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-3);
+}
+
+.form-right .body-4:not(:last-child) { margin-block-end: 25px; }
+
+.form-left,
+.form-right { padding: 40px 20px 30px; }
+
+.input-field[type="date"] {
+  text-transform: uppercase;
+  padding-inline-end: 10px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
+
+textarea.input-field {
+  resize: none;
+  height: 140px;
+  padding-block: 20px;
+  line-height: var(--lineHeight-1);
+}
+
+.form-left .btn {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-right {
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+
+

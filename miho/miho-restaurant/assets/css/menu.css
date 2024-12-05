@@ -1,0 +1,62 @@
+.container {
+    max-width: 100%;
+  }
+  
+  .menu-type {
+    width: 100px;
+    height: 54px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-type:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .table-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .table-section th, .table-section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table-section .pay-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #32cd32;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .table-section .pay-btn:hover {
+    background-color: #28a745;
+  }
+  
